@@ -55,15 +55,14 @@ $mantra_fonts = array(
 
 /* Social media networks */
 $mantra_socials = array(
-		"AboutMe", "AIM", "Amazon", "Contact", "Delicious", "DeviantArt",
+		"AboutMe", "AIM", "Amazon", "Bluesky", "Contact", "Delicious", "DeviantArt",
 		"Digg", "Discord", "Dribbble", "Etsy", "Facebook", "Flickr",
-		"FriendFeed", "Github", "GoodReads", "GooglePlus", "IMDb", "Instagram",
-		"LastFM", "LinkedIn", "Mail", "MindVox", "MySpace", "Newsvine", 
+		"FriendFeed", "Github", "GoodReads", "IMDb", "Instagram",
+		"LastFM", "LinkedIn", "Mail", "Mastodon", "MindVox", "MySpace", "Newsvine", 
 		"Patreon", "PayPal", "Phone", "Picasa", "Pinterest", "Reddit", 
-		"RSS", "ShareThis", "Skype", "Steam", "Steam-old", "SoundCloud", 
+		"RSS", "ShareThis", "Skype", "Steam", "SoundCloud", 
 		"StumbleUpon", "Technorati", "TripAdvisor", "Tumblr", "Twitch", "Twitter",
-		"Twitter-old", "Vimeo", "VK", "WordPress", "Yahoo", "Yelp", 
-		"YouTube", "YouTube-old", "Xing",
+		"Vimeo", "VK", "WordPress", "Yahoo", "Yelp", "YouTube", "X", "Xing",
 	);
 
 if ( !function_exists ('ma_options_validate') ) :

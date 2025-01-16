@@ -108,6 +108,11 @@
     padding: 6px 10px 7px;
 }
 
+.js .postbox .hndle {
+    cursor: auto;
+}
+
+
 .postbox .inside {
     padding: 10px 20px 10px;
 }

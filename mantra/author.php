@@ -26,7 +26,7 @@ get_header(); ?>
 				?>
 
 				<header class="page-header">
-					<h1 class="page-title author"><?php printf( __( 'Author Archives: %s', 'mantra' ), '<span class="vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( "ID" ) ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' ); ?></h1>
+					<h1 class="page-title author"><?php printf( __( 'Author Archives: %s', 'mantra' ), '<span class="vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( "ID" ) ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . esc_attr( get_the_author() ) . '</a></span>' ); ?></h1>
 				</header>
 
 				<?php
@@ -47,7 +47,7 @@ get_header(); ?>
 						<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'mantra_author_bio_avatar_size', 60 ) ); ?>
 					</div><!-- #author-avatar -->
 					<div id="author-description">
-						<h2><?php printf( __( 'About %s', 'mantra' ), get_the_author() ); ?></h2>
+						<h2><?php printf( __( 'About %s', 'mantra' ), esc_attr( get_the_author() ) ); ?></h2>
 						<?php the_author_meta( 'description' ); ?>
 					</div><!-- #author-description	-->
 				</div><!-- #entry-author-info -->

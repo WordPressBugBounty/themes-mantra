@@ -1,11 +1,11 @@
 =============
 Mantra WordPress Theme
-Copyright 2011-21 Cryout Creations
+Copyright 2011-25 Cryout Creations
 
 Author: Cryout Creations
 Requires at least: 4.2
-Tested up to: 6.5
-Stable tag: 3.3.2
+Tested up to: 6.7
+Stable tag: 3.3.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Donate link: https://www.cryoutcreations.eu/donate/
@@ -96,6 +96,11 @@ Turkish - Emre Dalkili�
 
 
 == Changelog ==
+
+= 3.3.3 =
+* Fixed XSS vulnerability allowing the output of unsanitized user names set by rogue editors/contributors - reported by stealthcopter on patchstack.com
+* Added new social icons: Bluesky, Mastodon and X
+* Removed obsolete social icons: GooglePlus, Steam-old, Twitter-old, Youtube-old
 
 = 3.3.2 =
 * Added site title text on header image title attribute

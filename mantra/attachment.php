@@ -30,8 +30,8 @@ get_header(); ?>
 								'meta-prep meta-prep-author',
 								sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
 									esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-									sprintf( esc_attr__( 'View all posts by %s', 'mantra' ), get_the_author() ),
-									get_the_author()
+									sprintf( esc_attr__( 'View all posts by %s', 'mantra' ), esc_attr( get_the_author() ) ),
+									esc_attr( get_the_author() )
 								)
 							);
 						?>

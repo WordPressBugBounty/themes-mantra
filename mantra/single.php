@@ -45,11 +45,11 @@ get_header(); ?>
 						<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'mantra_author_bio_avatar_size', 60 ) ); ?>
 					</div><!-- #author-avatar -->
 					<div id="author-description">
-						<h2><?php printf( esc_attr__( 'About %s', 'mantra' ), get_the_author() ); ?></h2>
+						<h2><?php printf( esc_attr__( 'About %s', 'mantra' ), esc_attr( get_the_author() ) ); ?></h2>
 						<?php the_author_meta( 'description' ); ?>
 						<div id="author-link">
 							<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
-								<?php printf( __( 'View all posts by ','mantra').'%s <span class="meta-nav">&rarr;</span>', get_the_author() ); ?>
+								<?php printf( __( 'View all posts by ','mantra').'%s <span class="meta-nav">&rarr;</span>', esc_attr( get_the_author() ) ); ?>
 							</a>
 						</div><!-- #author-link	-->
 					</div><!-- #author-description -->
